@@ -6,7 +6,7 @@ metadata:
 spec:
   endpoints:
     - interval: 15s
-      port: metrics
+      port: django-http
       scheme: http
   namespaceSelector:
     matchNames:

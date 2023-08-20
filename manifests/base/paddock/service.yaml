@@ -10,4 +10,4 @@ spec:
       port: 8000
       targetPort: django-http
   selector:
-    app: paddock
+    app.kubernetes.io/component: paddock

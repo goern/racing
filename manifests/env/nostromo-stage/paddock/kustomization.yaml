@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../../base/paddock
+  - service_monitor.yaml
 
 patches:
   - target:
@@ -28,7 +29,7 @@ patches:
         value: https-cert-paddock-nostromo-stage.b4mad.racing
 
   - target:
-      kind: Deployment
+      kind: DeploymentConfig
       name: paddock
     patch: |-
       - op: add

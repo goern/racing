@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - ../../../base/paddock
-  - service_monitor.yaml
 
 patches:
   - target:
@@ -37,3 +36,11 @@ patches:
         value:
           name: ALLOWED_HOST
           value: paddock-nostromo-stage.b4mad.racing
+
+  - target:
+      kind: ServiceMonitor
+      name: paddock
+    patch: |-
+      - op: replace
+        path: /spec/namespaceSelector/matchNames/0
+        value: b4mad-racing-stage

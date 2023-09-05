@@ -63,6 +63,8 @@ spec:
           envFrom:
             - secretRef:
                 name: paddock-settings
+            - secretRef:
+                name: paddock-socialaccounts
           image: paddock:latest
           imagePullPolicy: Always
           name: paddock

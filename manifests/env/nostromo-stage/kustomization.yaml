@@ -33,6 +33,6 @@ images:
     newTag: "1.27.3"
   - name: paddock
     newName: quay.io/b4mad/paddock
-    newTag: b39957f98eb17ebf9f690c406a9d6dd2a6a3ccd6
+    newTag: 36adcb6fa9e385e9c4af9aad18c10be112c6496b
   - name: docker.io/eclipse-mosquitto
     newTag: "2.0.16-openssl"

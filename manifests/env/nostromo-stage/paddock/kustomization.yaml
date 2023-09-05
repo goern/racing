@@ -38,6 +38,13 @@ patches:
           value: paddock-nostromo-stage.b4mad.racing
 
   - target:
+      kind: DeploymentConfig
+      name: paddock
+    patch: |-
+      - op: remove
+        path: /spec/triggers
+
+  - target:
       kind: ServiceMonitor
       name: paddock
     patch: |-

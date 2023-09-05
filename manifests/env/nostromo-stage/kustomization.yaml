@@ -23,6 +23,7 @@ resources:
 
   - paddock/
   - secrets/paddock-settings.yaml
+  - secrets/paddock-socialaccounts.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
